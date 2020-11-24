@@ -22,7 +22,7 @@ p, span, a, button{
     font-size: 35px;
     line-height: 75px;
     font-weight: bold;
-    padding: 0 100px;
+    padding: 0 130px;
 }
 .container{
     margin: 0 auto;
@@ -107,7 +107,7 @@ header .active, header ul li a:hover{
     margin-top: 15px;
 }
 .title{
-    padding: 60px 0;
+    padding: 40px 0;
     font-weight: 600;
     font-size: 40px;
     display: flex;
@@ -271,7 +271,46 @@ article{
     width: 250px !important;
     height: 300px;
 }
-@media (max-width:576px){
+.form-section .title{
+    display: flex;
+    justify-content: left;
+}
+.form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form1{
+    padding: 7px 0px;
+}
+.form1 input{
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 220px;
+}
+.form1 input:focus{
+    outline: none;
+}
+.form1 textarea{
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 440px;
+}
+.form1 textarea:focus{
+    outline: none;
+}
+#btnSubmit{
+    padding: 12px 25px;
+    background-color: #d81a24;
+    color: white;
+    border-radius: 20px;
+    margin: 15px 0;
+    font-size: 21px;
+}
+@media only screen and (max-width:576px){
     .logo{
         font-size: 30px;
         padding-left: 40px;
@@ -357,7 +396,25 @@ article{
     article{
         width: 25%;
     }
-
+    .form-section{
+        margin-left: 30px;
+    }
+    .form1{
+        display:flex;
+        flex-direction: column; 
+    }
+    .form input{
+        margin-bottom: 10px;
+        width: 250px;
+    }
+    .form textarea{
+        width: 250px;
+    }
+    #btnSubmit{
+        padding: 10px 20px;
+        margin: 15px 0;
+        font-size: 18px;
+    }
 }
 @media (min-width:577px) and (max-width:768px){
     .logo{
@@ -433,11 +490,18 @@ article{
         font-size: 35px;
         font-weight: 600;
         margin-left: 20px;
-
     }
     article{
         width: 45%;
         margin-left: 20px;
+    }
+    .form-section{
+        margin-left: 30px;
+    }
+    #btnSubmit{
+        padding: 15px 25px;
+        margin: 15px 0;
+        font-size: 18px;
     }
 
 }
@@ -476,12 +540,14 @@ article{
         font-size: 40px;
         font-weight: 600;
         margin-left: 20px;
-
     }
     article{
         width: 60%;
         margin-left: 20px;
 
+    }
+    .form-section{
+        margin-left: 30px;
     }
 }
 @media (min-width:953px) and (max-width: 1350px){
@@ -517,5 +583,8 @@ article{
         width: 70%;
         margin-left: 20px;
 
+    }
+    .form-section{
+        margin-left: 30px;
     }
 }
