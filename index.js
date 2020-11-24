@@ -1,3 +1,17 @@
+
+// Auto Text
+
+const autoText = "Welcome to Moovi website"
+let index = 0;
+
+function writeText() {
+    document.getElementById("h1").innerText = autoText.slice(0, index);
+    index++;
+
+    if (index > autoText.length) index = 0;
+}
+
+setInterval(writeText, 200);
 // filtering images
 filterSelection("all")
 function filterSelection(c) {
@@ -52,20 +66,19 @@ questions.forEach(question => {
 
 const btnSubmit = document.getElementById('btnSubmit');
 
+btnSubmit.addEventListener("click", e => {
+    e.preventDefault();
 
-    btnSubmit.addEventListener("click", e => {
-        e.preventDefault();
+    var firstName = document.getElementById("fName").value;
+    var surName = document.getElementById("sName").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
 
-        var firstName = document.getElementById("fName").value;
-        var surName = document.getElementById("sName").value;
-        var email = document.getElementById("email").value;
-        var phone = document.getElementById("phone").value;
-        var message = document.getElementById("message").value;
+    if (firstName === "" || surName === "" || email === "" || phone === "" || message === "") {
+        alert("Please, fill all the required fields")
+    } else {
+        confirm("You have successfully send a message!")
+    }
 
-        if (firstName === "" || surName === "" || email === "" || phone === "" || message === "") {
-            alert("Please, fill all the required fields")
-        } else {
-            confirm("You have successfully send a message!")
-        }
-
-    })
+})

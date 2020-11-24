@@ -344,6 +344,34 @@ article{
 .description p{
     font-size: 15px;
 }
+.news .images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    
+}
+.news .image{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    background-color: #faf6f6;
+    margin: 10px 15px;
+    border-radius: 7px;
+}
+.news .image img{
+    width: 300px;       
+    height: 150px;
+}
+.news .image h6{
+    margin: 10px 15px;
+    font-size: 15px;
+}
+.news{
+    display: flex;
+    flex-wrap: wrap;
+}
 @media only screen and (max-width:576px){
     .logo{
         font-size: 30px;
@@ -463,6 +491,18 @@ article{
     .description h3{
         margin-top: 15px;
     }
+    .news.images{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .news .image{
+        justify-content: start;
+        align-self: center;
+        width: 280px;
+    }
+    .news .image h6{
+        padding: 10px 0 20px 0;
+    }
 }
 @media (min-width:577px) and (max-width:768px){
     .logo{
@@ -564,7 +604,14 @@ article{
     .description{
         width: 45%;
     }
-
+    .news .image{
+        justify-content: center;
+        align-self: center;
+        width: 200px;
+    }
+    .image h3{
+        font-size: 16px;
+    }
 }
 @media (min-width:769px) and (max-width:952px){
     .logo{
@@ -605,7 +652,6 @@ article{
     article{
         width: 60%;
         margin-left: 20px;
-
     }
     .form-section{
         margin-left: 30px;
@@ -651,12 +697,10 @@ article{
         font-size: 45px;
         font-weight: 600;
         margin-left: 20px;
-
     }
     article{
         width: 70%;
         margin-left: 20px;
-
     }
     .form-section{
         margin-left: 30px;
