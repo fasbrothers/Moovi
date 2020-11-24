@@ -52,19 +52,20 @@ questions.forEach(question => {
 
 const btnSubmit = document.getElementById('btnSubmit');
 
-btnSubmit.addEventListener("click", e =>{
-    e.preventDefault();
 
-    var firstName = document.getElementById("fName").value;
-    var surName = document.getElementById("sName").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
+    btnSubmit.addEventListener("click", e => {
+        e.preventDefault();
 
-    if(firstName === "" || surName === "" || email === "" || phone === "" || message === "" ){
-        alert("Please, fill all the required fields")
-    }else{
-        confirm("You have successfully send a message!")
-    }
+        var firstName = document.getElementById("fName").value;
+        var surName = document.getElementById("sName").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
 
-})
+        if (firstName === "" || surName === "" || email === "" || phone === "" || message === "") {
+            alert("Please, fill all the required fields")
+        } else {
+            confirm("You have successfully send a message!")
+        }
+
+    })

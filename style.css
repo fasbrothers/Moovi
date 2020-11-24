@@ -26,7 +26,7 @@ p, span, a, button{
 }
 .container{
     margin: 0 auto;
-    width: 1250px;
+    width: 1150px;
 }
 header nav ul{
     float: right;
@@ -76,7 +76,7 @@ header .active, header ul li a:hover{
 }
 .heading h1{
     font-weight: 600;
-    font-size: 50px;;
+    font-size: 40px;;
 
 }
 .heading p{
@@ -190,6 +190,11 @@ footer li a:hover{
 }
 .content h4{
     margin-top: 15px;
+    color: black;
+    font-size: 20px;
+}
+.content p{
+    color: #d81a24;
 }
 .show {
     display: block;
@@ -310,10 +315,39 @@ article{
     margin: 15px 0;
     font-size: 21px;
 }
+.movie{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.video{
+    width: 50%;
+}
+.video iframe{
+    width: 560px; 
+    height: 315px;
+}
+.description{
+    width: 50%;
+}
+.description h3{
+    margin-bottom: 15px;
+}
+.description p{
+    margin-bottom: 5px;
+}
+.description span{
+    color: #1b1b1b;
+    font-weight: 600;
+    font-size: 17px;
+}
+.description p{
+    font-size: 15px;
+}
 @media only screen and (max-width:576px){
     .logo{
         font-size: 30px;
-        padding-left: 40px;
+        padding-left: 25px;
     }
     .checkbtn{
         display: block;
@@ -415,6 +449,20 @@ article{
         margin: 15px 0;
         font-size: 18px;
     }
+    .movie{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .video iframe{
+        width: 290px;
+        height: 200px;
+    }
+    .description{
+        width: 23%;
+    }
+    .description h3{
+        margin-top: 15px;
+    }
 }
 @media (min-width:577px) and (max-width:768px){
     .logo{
@@ -503,6 +551,19 @@ article{
         margin: 15px 0;
         font-size: 18px;
     }
+    .movie{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .description h3{
+        margin-top: 30px;
+    }
+    .video iframe{
+        width: 550px;
+    }
+    .description{
+        width: 45%;
+    }
 
 }
 @media (min-width:769px) and (max-width:952px){
@@ -549,8 +610,21 @@ article{
     .form-section{
         margin-left: 30px;
     }
+    .movie{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .description h3{
+        margin-top: 30px;
+    }
+    .video iframe{
+        width: 650px;
+    }
+    .description{
+        width: 55%;
+    }
 }
-@media (min-width:953px) and (max-width: 1350px){
+@media (min-width:953px) and (max-width: 1200px){
     .heading{
         padding-left: 340px;
         justify-content: start;
@@ -586,5 +660,15 @@ article{
     }
     .form-section{
         margin-left: 30px;
+    }
+    .movie{
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .description h3{
+        margin-top: 30px;
+    }
+    .description{
+        width: 55%;
     }
 }
