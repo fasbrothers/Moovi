@@ -155,7 +155,7 @@ footer li a:hover{
     margin-left: 100px;
 }
 .footer-socials a{
-    font-size: 25px;
+    font-size: 17px;
     margin-top: 15px;
     color: white;
     transition: .3s;
@@ -239,6 +239,7 @@ article{
     display: flex;
     justify-content: start;
     margin-bottom: 20px;
+    align-items: center;
 }
 .question-title p{
     font-size: 17px;
@@ -262,11 +263,12 @@ article{
 .show-text .plus{
     display: none;
 }
-.question-btn i{
+.question-btn {
     color: #d81a24;
     border: none;
-    font-size: 19px;
+    font-size: 25px;
     padding-right: 10px;
+    font-weight: 600;
 }
 .question-btn{
     border: none;
